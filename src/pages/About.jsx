@@ -259,7 +259,7 @@ export default function About() {
         <div className="bg-[#111] rounded-xl border border-[#2a2a2a] p-6 shadow-sm w-full max-w-4xl mx-auto relative">
           
           {/* Area for the large faded logo (red circle area) */}
-          <div className="absolute bottom-0 right-0 w-1/3 h-1/3 flex items-end justify-end p-4 pointer-events-none">
+          <div className="absolute bottom-0 right-0 w-full md:w-2/4 h-1/2 md:h-1/3 flex items-end justify-end p-4 pointer-events-none">
           {allSkills.map((skill, index) => {
             const motionOffset = motionVariants[index % motionVariants.length];
 
@@ -297,7 +297,7 @@ export default function About() {
                     }
               }
               transition={{ duration: 0.6, ease: 'easeInOut' }}
-              className="absolute w-full h-full object-contain"
+              className="absolute w-[200px] md:w-full h-[200px] md:h-full object-contain"
             />
             );
           })}

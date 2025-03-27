@@ -12,8 +12,8 @@ const Footer = () => {
             <nav className="flex flex-col space-y-1">
               <a href="#home" className="hover:text-gray-300">Home</a>
               <a href="#about" className="hover:text-gray-300">About</a>
-              <a href="#projects" className="hover:text-gray-300">Projects</a>
-              <a href="#certification" className="hover:text-gray-300">Certification</a>
+              <a href="#project" className="hover:text-gray-300">Projects</a>
+              <a href="#certifications" className="hover:text-gray-300">Certification</a>
               <a href="#hobbies" className="hover:text-gray-300">Hobbies</a>
             </nav>
           </div>
