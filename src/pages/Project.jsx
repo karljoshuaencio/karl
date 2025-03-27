@@ -167,10 +167,12 @@ const Project = () => {
   };
 
   return (
-    <div id="project" className="w-full min-h-screen bg-[#121212] snap-y snap-mandatory overflow-y-auto scroll-smooth">
-        <h3 className="text-3xl font-bold mb-10 text-center text-[#1db954]">
-          Projects
-        </h3>
+    <div id="project" className="w-full min-h-screen bg-[#121212] snap-y snap-mandatory overflow-y-auto scroll-smooth relative">
+        <div className="pt-32">  {/* Add this wrapper div with padding-top */}
+            <h3 className="text-3xl font-bold mb-10 text-center text-[#1db954]">
+              Projects
+            </h3>
+        </div>
       {projects.map((project, index) => (
         <section
           key={index}
