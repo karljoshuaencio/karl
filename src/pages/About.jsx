@@ -15,6 +15,8 @@ import navicatskills from "../assets/skills/naviskills.png";
 import awsskills from "../assets/skills/awsskills.png";
 import dockerskills from "../assets/skills/dockerskills.png";
 import arduinoskills from "../assets/skills/arduinoskills.png";
+import nextjsskills from "../assets/skills/nextjsskills.png";
+import firebaseskills from "../assets/skills/firebaseskills.png";
 // Fade logos
 import reactfade from "../assets/fade/reactfade.png";
 import cifade from "../assets/fade/cifade.png";
@@ -30,6 +32,8 @@ import navicatfade from "../assets/fade/navicatfade.png";
 import awsfade from "../assets/fade/awsfade.png";
 import dockerfade from "../assets/fade/dockerfade.png";
 import arduinofade from "../assets/fade/arduinofade.png";
+import nextjsfade from "../assets/fade/nextjsfade.png";
+import firebasefade from "../assets/fade/firebasefade.png";
 
 export default function About() {
 
@@ -41,6 +45,7 @@ export default function About() {
         { src: reactskills, label: "React", fade: reactfade },
         { src: ciskills, label: "CI", fade: cifade },
         { src: laravelskills, label: "Laravel", fade: laravelfade },
+        { src: nextjsskills, label: "Next.js", fade: nextjsfade },
       ],
     },
     {
@@ -64,6 +69,7 @@ export default function About() {
       skills: [
         { src: mysqlskills, label: "MySQL", fade: mysqlfade },
         { src: navicatskills, label: "Navicat", fade: navicatfade },
+        { src: firebaseskills, label: "Firebase", fade: firebasefade },
       ],
     },
     {
@@ -123,7 +129,7 @@ export default function About() {
           Hi, I'm Karl Joshua Y. Encio, a 4th-year Bachelor of Science in Information Technology specializing in Web and Mobile Application at <span className="text-[#1db954] font-medium">FEU - Institute of Technology</span>.
           </p>
             <p>
-            I'm an aspiring <span className="text-white font-medium">Software Engineer</span> and <span className="text-white font-medium">Cloud Engineer</span> who’s passionate about building responsive and user-friendly websites. I enjoy creating intuitive digital experiences and scalable systems.
+              I'm an aspiring <span className="text-[#1db954] font-medium">Cloud Engineer</span> who’s passionate about designing scalable, secure, and resilient cloud infrastructure. I enjoy automating deployments, optimizing system performance, and building solutions that support high availability and growth.
             </p>
             <p>
             Ever since Grade 2, I’ve been glued to my computer—playing games, browsing the web, scrolling through Facebook—and I haven’t stopped exploring tech since. Now, I channel that curiosity into building real-world tech solutions.
@@ -153,7 +159,7 @@ export default function About() {
     </motion.h3>
 
     <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      {/* 🎯 Animated center vertical line */}
+      {/*  Animated center vertical line */}
       <motion.div
         initial={{ scaleY: 0 }}
         whileInView={{ scaleY: 1 }}
@@ -162,7 +168,43 @@ export default function About() {
       />
 
       <div className="space-y-20">
-        {/* 💼 Timeline Item - LEFT */}
+        {/*  Timeline Item - Right */}
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, x: -100, scale: 0.9 },
+            visible: { opacity: 1, x: 0, scale: 1 },
+          }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          className="flex flex-col md:flex-row-reverse md:items-start relative"
+        >
+          {/* Dot (Mobile) */}
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.5, ease: 'backOut' }}
+            className="md:hidden mx-auto mb-4 w-4 h-4 bg-[#1db954] rounded-full border-4 border-[#121212]"
+          />
+          <div className="w-full md:w-1/2 md:pl-10 text-left">
+            <p className="font-semibold text-[#1db954] text-lg">
+              Software Engineer Intern
+            </p>
+            <p className="text-[#aaaaaa] mb-2">
+              Infinity Eight Data Solutions — April 2025 - July 2025
+            </p>
+            <p className="text-gray-300 text-justify">
+              Developed CMS websites for Elegho – a property management system – and the official company website for Infinity Eight Data Solutions Inc. Built responsive user interfaces using Next.js, implemented API integrations, and ensured compatibility across desktop, tablet, and mobile devices.
+            </p>
+          </div>
+          {/* Dot (Desktop) */}
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.5, ease: 'backOut' }}
+            className="hidden md:block absolute left-[calc(50%-10px)] bg-[#1db954] w-6 h-6 rounded-full border-4 border-[#121212]"
+          />
+        </motion.div>
+
+        {/*  Timeline Item - LEFT */}
         <motion.div
           variants={{
             hidden: { opacity: 0, x: -100, scale: 0.9 },

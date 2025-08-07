@@ -3,17 +3,20 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+// AWS Cloud Practitioner Certifications
+import awscloudpractitionercertificate from "../assets/Certifications/awscloudpractitionercertificate.png";
+import awscloudpractitionercredly from "../assets/Certifications/awscloudpractitionercredly.png";
+import awscloudpractitionerscore from "../assets/Certifications/awscloudpractitionerscore.png";
+import awscloudpractitionerscore1 from "../assets/Certifications/awscloudpractitionerscore1.png";
 // Cloud Computing Certifications
 import cloudCertificate from "../assets/Certifications/cloudcertificate.png";
 import cloudCredly from "../assets/Certifications/cloudcomputingcredly.png";
 import cloudScore from "../assets/Certifications/cloudcomputingscore.png";
-
 // Networking Certifications
 import networkingCertificate from "../assets/Certifications/networkingcertificate.png";
 import networkingCredly from "../assets/Certifications/networkingcredly.png";
 import networkingScore from "../assets/Certifications/networkingscore.png";
 
-// Add these imports at the top with other imports
 import ccnaenterprise from "../assets/badges/ccnaenterprise.png";
 import ccnaintroduction from "../assets/badges/ccnaintroduction.png";
 import ccnaswitching from "../assets/badges/ccnaswitching.png";
@@ -24,6 +27,11 @@ import cloudcomputing101 from "../assets/badges/cloudcomputing101.png";
 import gettingstartedwithcompute from "../assets/badges/gettingstartedwithcompute.png";
 
 const certifications = [
+  {
+    title: "AWS Cloud Practitioner",
+    description: "Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge. Badge owners are able to identify essential AWS services necessary to set up AWS-focused projects.",
+    images: [awscloudpractitionercertificate, awscloudpractitionercredly, awscloudpractitionerscore, awscloudpractitionerscore1],
+  },
   {
     title: "IT Specialist - Cloud Computing",
     description: "Earners for this exam will be able to identify and describe end solutions that leverage cloud technologies, considerations that span across solutions and the art of the possible in utilizing cloud to develop solutions.",

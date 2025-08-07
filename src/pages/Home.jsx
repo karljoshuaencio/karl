@@ -16,7 +16,7 @@ export default function Home() {
             Hi, I'm <span className="text-[#1db954]">Karl Joshua Encio</span> 👑
           </h1>
           <p className="text-lg md:text-xl text-[#ffffff] max-w-md">
-            Systems Developer Intern
+            Aspiring Cloud Engineer
           </p>
           <a
             href="#project"

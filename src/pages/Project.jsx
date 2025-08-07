@@ -27,6 +27,33 @@ import offset2 from "../assets/Projects/Offset/offset2.png";
 import offset3 from "../assets/Projects/Offset/offset3.png";
 import offset4 from "../assets/Projects/Offset/offset4.png";
 
+// Elegho
+import Elegho1 from "../assets/Projects/Elegho/Elegho1.png";
+import Elegho2 from "../assets/Projects/Elegho/Elegho2.png";
+import Elegho3 from "../assets/Projects/Elegho/Elegho3.png";
+import Elegho4 from "../assets/Projects/Elegho/Elegho4.png";
+import Elegho5 from "../assets/Projects/Elegho/Elegho5.png";
+import Elegho6 from "../assets/Projects/Elegho/Elegho6.png";
+import Elegho7 from "../assets/Projects/Elegho/Elegho7.png";
+import Elegho8 from "../assets/Projects/Elegho/Elegho8.png";
+import Elegho9 from "../assets/Projects/Elegho/Elegho9.png";
+import Elegho10 from "../assets/Projects/Elegho/Elegho10.png";
+import Elegho11 from "../assets/Projects/Elegho/Elegho11.png";
+import Elegho12 from "../assets/Projects/Elegho/Elegho12.png";
+import Elegho13 from "../assets/Projects/Elegho/Elegho13.png";
+import Elegho14 from "../assets/Projects/Elegho/Elegho14.png";
+import Elegho15 from "../assets/Projects/Elegho/Elegho15.png";
+import Elegho16 from "../assets/Projects/Elegho/Elegho16.png";
+
+// Infinity 8
+import Infinity1 from "../assets/Projects/Infinity8/Infinity1.png";
+import Infinity2 from "../assets/Projects/Infinity8/Infinity2.png";
+import Infinity3 from "../assets/Projects/Infinity8/Infinity3.png";
+import Infinity4 from "../assets/Projects/Infinity8/Infinity4.png";
+import Infinity5 from "../assets/Projects/Infinity8/Infinity5.png";
+import Infinity6 from "../assets/Projects/Infinity8/Infinity6.png";
+import Infinity7 from "../assets/Projects/Infinity8/Infinity7.png";
+
 // Photobooth
 import photobooth1 from "../assets/Projects/Photobooth/photobooth1.png";
 import photobooth2 from "../assets/Projects/Photobooth/photobooth2.png";
@@ -55,7 +82,7 @@ const projects = [
     images: [dmma1, dmma2, dmma3, dmma4, dmma5, dmma6, dmma7],
   },
   {
-    name: "Intern Project - HRIS and Associates Overtime System",
+    name: "FEU - Institute of Technology Information Technology Services Office Intern Project - HRIS and Associates Overtime System",
     description: "Developed a Overtime System for the associates portal of FEU - Institute of Technology, FEU - Alabang, and FEU - Diliman.",
     details: `• Develop and design of Overtime Application of the associates portal.
     • Implement filing of Overtime based on approved work schedules, cutoff periods, and daily work schedule times of each associate.
@@ -71,7 +98,7 @@ const projects = [
     images: [overtime1, overtime2, overtime3, overtime4, overtime5, overtime6, overtime7],
   },
   {
-    name: "Intern Project - HRIS and Associates Offset System",
+    name: "FEU - Institute of Technology Information Technology Services Office Intern Project - HRIS and Associates Offset System",
     description: "Developed a Offset System for the associates portal of FEU - Institute of Technology, FEU - Alabang, and FEU - Diliman.",
     'details': ` • Develop and design of Offset Application of the associates portal.
     • Implement filing of Offset based on approved work schedules, cutoff periods, and daily work schedule times of each associate.
@@ -84,7 +111,38 @@ const projects = [
     • Implement SQL triggers for data integrity and security measures in the database.
     • Develop a Report Generation Function of capable of exporting data into Excel format.`,
         images: [offset1, offset2, offset3, offset4],
-      },
+  },
+  {
+    name: "Infinity Eight Data Solutions Inc. Intern Project - Elegho",
+    description: "Developed a CMS website for Elegho – A property management system built under Infinity Eight Data Solutions Inc.",
+    details: ` • Developed a fully functional CMS website for Elegho using Next.js for property management operations.
+    • Implemented user authentication and role-based authorization using Firebase Authentication.
+    • Integrated Google Maps API for displaying property locations with dynamic marker functionality.
+    • Utilized Firebase Storage to manage and store assets including images and documents.
+    • Designed a responsive interface compatible with desktop, tablet, and mobile devices.
+    • Developed an admin panel for managing dynamic content with full CRUD operations.
+    • Enabled real-time content updates and data-driven interactions across the platform.
+    • Deployed the application using Vercel for continuous integration and seamless production delivery.
+    • Participated in debugging and troubleshooting sessions to resolve UI, API, and deployment-related issues.
+    • Leveraged Git and GitHub for version control, collaboration, and deployment management.
+    • Integrated the in-house Nicemail API (developed by Infinity Eight Data Solutions Inc.) to send automated emails upon contact form submission and pricing form sign-up.`,
+    images: [Elegho1, Elegho2, Elegho3, Elegho4, Elegho5, Elegho6, Elegho7, Elegho8, Elegho9, Elegho10, Elegho11, Elegho12, Elegho13, Elegho14, Elegho15, Elegho16],
+  },
+  {
+    name: "Infinity Eight Data Solutions Inc. Intern Project - Infinity Eight Data Solutions",
+    description: "Developed the official CMS website for Infinity Eight Data Solutions Inc. to manage company content and client inquiries.",
+    details: ` • Built a full-featured CMS website using Next.js, tailored for company content management and user interaction.
+    • Implemented secure user authentication and role-based access control using Firebase Authentication.
+    • Utilized Firebase Storage for managing and storing media assets and documentation.
+    • Designed a fully responsive interface optimized for desktop, tablet, and mobile devices.
+    • Developed an intuitive admin dashboard with full CRUD functionality for dynamic content management.
+    • Enabled seamless real-time updates and content rendering across the platform.
+    • Deployed the application on Vercel for efficient hosting and continuous delivery.
+    • Participated in debugging and optimization sessions to improve application performance and stability.
+    • Employed Git and GitHub for source control, collaboration, and version management.
+    • Integrated the in-house Nicemail API (developed by Infinity Eight Data Solutions Inc.) to send automated emails upon contact form submission`,
+    images: [Infinity1, Infinity2, Infinity3, Infinity4, Infinity5, Infinity6, Infinity7],
+  },
   {
     name: "Putobooth",
     description: "React.js-based Photobooth Application that allows users to capture and generate a personalized photostrip in real-time. The app provides an interactive and user-friendly interface where users can take 3 photos, customize the photostrip layout, apply filters, and add their name.",
