@@ -1,6 +1,6 @@
 import React from "react";
 import heroImage from "../assets/hero.png";
-import resume from "../assets/resume/KarlJoshuaEncioResume.pdf";
+import resume from "../assets/resume/Karl Joshua Encio - Resume.pdf";
 import { FaBriefcase } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFileAlt } from "react-icons/fa";
@@ -28,7 +28,7 @@ export default function Home() {
           <div className="mt-11">
             <div className="flex flex-wrap justify-center md:justify-start gap-6">
               <a
-                href="https://edith.feutech.edu.ph/briefcase/profile/KarlJoshuaEncio"
+                href="https://paraverse.feutech.edu.ph/briefcase/profile/KarlJoshuaEncio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#1db954] hover:bg-[#1db954]/80 text-white px-6 py-3 rounded-full shadow-md transition flex items-center gap-2"
@@ -36,7 +36,7 @@ export default function Home() {
                 <FaBriefcase /> Briefcase
               </a>
               <a
-                href="https://www.linkedin.com/in/karl-joshua-encio-8739a7300/"
+                href="https://www.linkedin.com/in/karljoshuaencio/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#0077b5] hover:bg-[#0077b5]/80 text-white px-6 py-3 rounded-full shadow-md transition flex items-center gap-2"

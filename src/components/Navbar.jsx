@@ -50,24 +50,23 @@ export default function Navbar() {
         <ul
           className={`${
             menuOpen ? "flex" : "hidden"
-          } md:flex flex-col md:flex-row items-center gap-4 bg-[#1c1c1c] px-6 py-2 rounded-full shadow-lg border border-[#2a2a2a] mt-2 md:mt-0 transition-all duration-300 ease-in-out`}
+          } absolute top-12 right-0 md:relative md:top-0 md:flex flex-col md:flex-row items-center gap-1 md:gap-4 bg-[#1c1c1c] px-4 py-3 md:px-6 md:py-2 rounded-2xl md:rounded-full shadow-lg border border-[#2a2a2a] w-full md:w-auto transition-all duration-300 ease-in-out`}
         >
           {navItems.map((item) => (
-            <li key={item.name}>
+            <li key={item.name} className="w-full md:w-auto">
               <a
                 href={item.href}
                 onClick={() => {
                   setActive(item.name);
                   setMenuOpen(false);
                 }}
-                className={`px-6 py-2 rounded-full font-semibold text-sm transition-all duration-300 ${
+                className={`block w-full px-4 py-2 md:px-6 md:py-2 rounded-full font-semibold text-sm transition-all duration-300 text-center ${
                   active === item.name
                     ? "bg-[#1db954] text-white shadow-md"
                     : "bg-transparent text-white hover:bg-[#1db954]/20"
                 }`}
               >
                 {item.name}
-                
               </a>
             </li>
           ))}
